@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../../asset/css/master.css">
     <!--quil editor-->
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <title>Mes taches</title>
+    <title></title>
 </head>
 <body>
     <div class="container-full">
@@ -35,7 +35,7 @@
                     Accueil
                   </a>
                 </li>
-                <li>
+                <li class="">
                   <a href="../information.html">
                     <span class="icone-menu"><ion-icon name="information-circle-outline"></ion-icon></span>
                     Information
@@ -54,7 +54,7 @@
                   </a>
                 </li>
                 <li class="act-show">
-                  <a href="showTask.html">
+                  <a href="tasks/allProject.html">
                     <span class="icone-menu"><ion-icon name="list-outline"></ion-icon></span>
                     Mes taches
                   </a>
@@ -102,10 +102,10 @@
       <div class="item-bloc2">
         <div class="contente-full">
             <div class="head-152">
-                <h4>
-                  <span><ion-icon name="information-circle-outline"></ion-icon> </span>
-                  Mes taches
-                </h4>
+                <h6>
+                  <span><ion-icon name="list-outline"></ion-icon> </span>
+                  Mes projets
+                </h6>
                 <div class="help-container">
                   <ul>
                     <li>
@@ -113,6 +113,7 @@
                     </li>
                     <li>
                       <a href="#"><ion-icon name="notifications-outline"></ion-icon></a>
+                      <p></p>
                     </li>
                     <li>
                       <a href="#"><ion-icon name="person-outline"></ion-icon></a>
@@ -120,7 +121,6 @@
                   </ul>
                 </div>
             </div>
-            <hr />
             <div class="container-225-i">
                 <div class="tab-container">
                   <div class="tab-container-menu">
@@ -140,57 +140,77 @@
                     </ul>
                   </div>
                   <div class="tab-container-content">
-                    <div id="tabs-contents" class="tab-content">
-                      <div id="mes_projets" class="content active_tab">
-                        <div class="add_proj">
-                          <p><a href="#">Ajouter un projet</a></p>
-                        </div>
-                        <div class="proj_228_content">
-                          <div class="proj_228">
-                            <div class="proj_head">
-                              <div class="proj_head_65f">
-                                <div class="proj_head_3t">
+                    <div>
+                      <div class="menu-project">
+                        <ul class="list-menu-project">
+                          <li>
+                              <span class="active_proj">Tous les projets</span>
+                              11
+                          </li>
+                          <li><span>Projets en cours </span> 8</li>
+                          <li><span>Projets terminés </span> 4</li>
+                        </ul>
+                        <p class="add_project">
+                          <a href="#">Ajouter un projet</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="project_all">
+                        <a href="#">
+                          <div class="card_proj">
+                            <div class="card_proj_body">
+                              <div class="ti-card-proj">
+                                <p><span>Projet:</span> Web</p>
+                                <div class="bgt-3">
                                   <div></div>
                                   <div></div>
                                   <div></div>
                                 </div>
-                                <p>A faire <span>2</span> </p>
                               </div>
-                              <p><a href="#">+ Tache</a> </p>
-                            </div>
-                            <div class="proj_head_content">
-                              <div class="card_proj">
-                                <div class="card_proj_head">
-                                  <div></div>
-                                  A faire
+                              <div class="team_dt_box">
+                                <p><span>Equipe:</span> Dévéloppeur</p>
+                                <div class="dt-258">
+                                  <p><ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span></p>
+                                  <p><ion-icon name="person-outline"></ion-icon> <span>11</span></p>
                                 </div>
-                                <div class="card_proj_description">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                </div>
-                                <div class="card_proj_users">
-                                  <span><img src="" alt=""></span>
-                                </div>
-                                <div class="card_proj_progress">
-                                  <span>322/19455</span>
-                                  <div class="card_proj_box">
-                                    <div class="card_proj_line"></div>
-                                  </div>
-                                  <p>Date limite <span>10/11/2022</span></p>
+                              </div>
+                              <div class="pr_bar_box">
+                                <p>Progression <span>10/20</span></p>
+                                <div class="proj_progress">
+                                  <div id="progress_Proj_bar"></div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <p><a href="#"><ion-icon name="add-outline"></ion-icon></a></p>
-                        </div>
-                      </div>
-                      <div id="projet_personnel" class="content">
-
-                      </div>
-                      <div id="projet_equipe" class="content">
-
-                      </div>
-                      <div id="mon_equipe" class="content">
-
+                        </a>
+                        <a href="#">
+                          <div class="card_proj">
+                            <div class="card_proj_body">
+                              <div class="ti-card-proj">
+                                <p><span>Projet:</span> Web</p>
+                                <div class="bgt-3">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="team_dt_box">
+                                <p><span>Equipe:</span> Dévéloppeur</p>
+                                <div class="dt-258">
+                                  <p><ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span></p>
+                                  <p><ion-icon name="person-outline"></ion-icon> <span>11</span></p>
+                                </div>
+                              </div>
+                              <div class="pr_bar_box">
+                                <p>Progression <span>10/20</span></p>
+                                <div class="proj_progress">
+                                  <div id="progress_Proj_bar"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -198,7 +218,6 @@
             </div>
         </div>
         <div class="dash_footer">
-          <hr />
           <p>@copyrigth</p>
         </div>
       </div>
@@ -207,7 +226,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/94491a0993.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <script src="./../asset/js/index.js" charset="utf-8"></script>
     <!-- Include the Quill library -->
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
