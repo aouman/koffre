@@ -142,48 +142,35 @@
                   <div class="tab-container-content">
                     <div>
                       <div class="menu-project">
-                        <ul class="list-menu-project">
-                          <li>
-                              <span class="active_proj">Tous les projets</span>
+                        <!-- Tab links -->
+                        <div class="list-menu-project">
+                          <div class="projectLink active_proj" data-tab-target="#projects" >
+                              <p>
+                                <span class="">Tous les projets</span>
                               11
-                          </li>
-                          <li><span>Projets en cours </span> 8</li>
-                          <li><span>Projets terminés </span> 4</li>
-                        </ul>
+                              </p>
+                          </div>
+                          <div class="projectLink" data-tab-target="#projectC">
+                              <p>
+                                <span>Projets en cours </span>
+                                8
+                              </p>
+                          </div>
+                          <div class="projectLink" data-tab-target="#projectT">
+                              <p>
+                                <span>Projets terminés </span>
+                                4
+                              </p>
+                          </div>
+                        </div>
                         <p class="add_project">
                           <a href="#">Ajouter un projet</a>
                         </p>
                       </div>
                     </div>
-                    <div>
-                      <div class="project_all">
-                        <a href="#">
-                          <div class="card_proj">
-                            <div class="card_proj_body">
-                              <div class="ti-card-proj">
-                                <p><span>Projet:</span> Web</p>
-                                <div class="bgt-3">
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                </div>
-                              </div>
-                              <div class="team_dt_box">
-                                <p><span>Equipe:</span> Dévéloppeur</p>
-                                <div class="dt-258">
-                                  <p><ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span></p>
-                                  <p><ion-icon name="person-outline"></ion-icon> <span>11</span></p>
-                                </div>
-                              </div>
-                              <div class="pr_bar_box">
-                                <p>Progression <span>10/20</span></p>
-                                <div class="proj_progress">
-                                  <div id="progress_Proj_bar"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
+                      <!-- Tab content -->
+                    <div id="projects" data-tab-content class="active">
+                      <div class="projectContent project_all">
                         <a href="#">
                           <div class="card_proj">
                             <div class="card_proj_body">
@@ -213,6 +200,244 @@
                         </a>
                       </div>
                     </div>
+                    <div id="projectC" data-tab-content>
+                      <div class="projectContent project_all">
+                        <a href="#">
+                          <div class="card_proj">
+                            <div class="card_proj_body">
+                              <div class="ti-card-proj">
+                                <p><span>Projet:</span> Web</p>
+                                <div class="bgt-3">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="team_dt_box">
+                                <p><span>Equipe:</span> Dévéloppeur</p>
+                                <div class="dt-258">
+                                  <p>
+                                    <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                                  </p>
+                                  <p>
+                                    <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="pr_bar_box">
+                                <p>Progression <span>10/20</span></p>
+                                <div class="proj_progress">
+                                  <div id="progress_Proj_bar"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="card_proj">
+                            <div class="card_proj_body">
+                              <div class="ti-card-proj">
+                                <p><span>Projet:</span> Web</p>
+                                <div class="bgt-3">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="team_dt_box">
+                                <p><span>Equipe:</span> Dévéloppeur</p>
+                                <div class="dt-258">
+                                  <p>
+                                    <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                                  </p>
+                                  <p>
+                                    <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="pr_bar_box">
+                                <p>Progression <span>10/20</span></p>
+                                <div class="proj_progress">
+                                  <div id="progress_Proj_bar"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="card_proj">
+                            <div class="card_proj_body">
+                              <div class="ti-card-proj">
+                                <p><span>Projet:</span> Web</p>
+                                <div class="bgt-3">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="team_dt_box">
+                                <p><span>Equipe:</span> Dévéloppeur</p>
+                                <div class="dt-258">
+                                  <p>
+                                    <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                                  </p>
+                                  <p>
+                                    <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="pr_bar_box">
+                                <p>Progression <span>10/20</span></p>
+                                <div class="proj_progress">
+                                  <div id="progress_Proj_bar"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div id="projectT" data-tab-content>
+                      <div class="projectContent project_all">
+                        <a href="#">
+                          <div class="card_proj">
+                            <div class="card_proj_body">
+                              <div class="ti-card-proj">
+                                <p><span>Projet:</span> Web</p>
+                                <div class="bgt-3">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="team_dt_box">
+                                <p><span>Equipe:</span> Dévéloppeur</p>
+                                <div class="dt-258">
+                                  <p>
+                                    <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                                  </p>
+                                  <p>
+                                    <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="pr_bar_box">
+                                <p>Progression <span>10/20</span></p>
+                                <div class="proj_progress">
+                                  <div id="progress_Proj_bar"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="card_proj">
+                            <div class="card_proj_body">
+                              <div class="ti-card-proj">
+                                <p><span>Projet:</span> Web</p>
+                                <div class="bgt-3">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="team_dt_box">
+                                <p><span>Equipe:</span> Dévéloppeur</p>
+                                <div class="dt-258">
+                                  <p>
+                                    <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                                  </p>
+                                  <p>
+                                    <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="pr_bar_box">
+                                <p>Progression <span>10/20</span></p>
+                                <div class="proj_progress">
+                                  <div id="progress_Proj_bar"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="card_proj">
+                            <div class="card_proj_body">
+                              <div class="ti-card-proj">
+                                <p><span>Projet:</span> Web</p>
+                                <div class="bgt-3">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="team_dt_box">
+                                <p><span>Equipe:</span> Dévéloppeur</p>
+                                <div class="dt-258">
+                                  <p>
+                                    <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                                  </p>
+                                  <p>
+                                    <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="pr_bar_box">
+                                <p>Progression <span>10/20</span></p>
+                                <div class="proj_progress">
+                                  <div id="progress_Proj_bar"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div class="card_proj">
+                            <div class="card_proj_body">
+                              <div class="ti-card-proj">
+                                <p><span>Projet:</span> Web</p>
+                                <div class="bgt-3">
+                                  <div></div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="team_dt_box">
+                                <p><span>Equipe:</span> Dévéloppeur</p>
+                                <div class="dt-258">
+                                  <p>
+                                    <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                                  </p>
+                                  <p>
+                                    <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="pr_bar_box">
+                                <p>Progression <span>10/20</span></p>
+                                <div class="proj_progress">
+                                  <div id="progress_Proj_bar"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Pop up Add project-->
+                    <div class="custom-model-main">
+                      <div class="custom-model-inner">
+                        <div class="close-btn">×</div>
+                        <div class="custom-model-wrap">
+                          <div class="pop-up-content-wrap">
+                            Content Here
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-overlay"></div>
+                    </div>
+                    <!-- END Pop up Add project-->
                   </div>
                 </div>
             </div>
@@ -226,11 +451,12 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/94491a0993.js" crossorigin="anonymous"></script>
-    <script src="./../asset/js/index.js" charset="utf-8"></script>
+    <script src="../../asset/js/master.js" charset="utf-8"></script>
+    <script src="../../asset/js/index.js" charset="utf-8"></script>
     <!-- Include the Quill library -->
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
     <!-- Initialize Quill editor -->
-    <script src="./../asset/js/quilleditor.js" charset="utf-8"></script>
+    <script src="../../asset/js/quilleditor.js" charset="utf-8"></script>
 </body>
 </html>
