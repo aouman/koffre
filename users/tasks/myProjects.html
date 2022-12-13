@@ -1,218 +1,552 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!--Font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
-    <!--End Font-->
-    <link rel="stylesheet" href="../../asset/css/master.css">
-    <!--quil editor-->
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <title>Mes taches</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Raleway:wght@200;400&display=swap"
+    rel="stylesheet">
+  <!--End Font-->
+  <link rel="stylesheet" href="../../asset/css/master.css">
+  <!--quil editor-->
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <title></title>
 </head>
+
 <body>
-    <div class="container-full">
-      <div class="items-bloc1">
-        <div class="menu">
-            <div class="box-logo">
-                <span style="display:none;">
-                    <ion-icon name="menu-outline"></ion-icon>
-                    <i class="fas fa-times"></i>
+  <div class="container-full">
+    <div class="items-bloc1">
+      <div class="menu">
+        <div class="box-logo">
+          <span style="display:none;">
+            <ion-icon name="menu-outline"></ion-icon>
+            <i class="fas fa-times"></i>
+          </span>
+          <img src="../../asset/medias/kofre.png" width="120" alt="kofre-logo" />
+        </div>
+        <div class="menu-items">
+          <ul>
+            <li>
+              <a href="../dasboardUser1.html">
+                <span class="icone-menu">
+                  <ion-icon name="home-outline"></ion-icon>
                 </span>
-                <img src="../../asset/medias/kofre.png" width="120" alt="kofre-logo" />
-            </div>
-            <div class="menu-items">
-              <ul>
+                Accueil
+              </a>
+            </li>
+            <li class="">
+              <a href="../information.html">
+                <span class="icone-menu">
+                  <ion-icon name="information-circle-outline"></ion-icon>
+                </span>
+                Information
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icone-menu">
+                  <ion-icon name="receipt-outline"></ion-icon>
+                </span>
+                Comptabilité
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icone-menu">
+                  <ion-icon name="clipboard-outline"></ion-icon>
+                </span>
+                Stock
+              </a>
+            </li>
+            <li class="act-show">
+              <a href="tasks/allProject.html">
+                <span class="icone-menu">
+                  <ion-icon name="list-outline"></ion-icon>
+                </span>
+                Mes taches
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icone-menu">
+                  <ion-icon name="chatbubbles-outline"></ion-icon>
+                </span>
+                Chat
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icone-menu">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                </span>
+                Agendas
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icone-menu">
+                  <ion-icon name="people-outline"></ion-icon>
+                </span>
+                Mon équipe
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icone-menu">
+                  <ion-icon name="diamond-outline"></ion-icon>
+                </span>
+                Abonnement
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icone-menu">
+                  <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                </span>
+                Message
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icone-menu">
+                  <ion-icon name="settings-outline"></ion-icon>
+                </span>
+                Paramètre
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="item-bloc2">
+      <div class="contente-full">
+        <div class="head-152">
+          <h6>
+            <span>
+              <ion-icon name="list-outline"></ion-icon>
+            </span>
+            Mes projets
+          </h6>
+          <div class="help-container">
+            <ul>
+              <li>
+                <a href="#">
+                  <ion-icon name="help-outline"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="notifications-outline"></ion-icon>
+                </a>
+                <p></p>
+              </li>
+              <li>
+                <a href="#">
+                  <ion-icon name="person-outline"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-225-i">
+          <div class="tab-container">
+            <div class="tab-container-menu">
+              <ul class="tab-menus">
                 <li>
-                  <a href="../dasboardUser1.html">
-                    <span class="icone-menu"><ion-icon name="home-outline"></ion-icon></span>
-                    Accueil
-                  </a>
+                  <a href="#mes_projets" class="active_tab">Mes Projets</a>
                 </li>
                 <li>
-                  <a href="../information.html">
-                    <span class="icone-menu"><ion-icon name="information-circle-outline"></ion-icon></span>
-                    Information
-                  </a>
+                  <a href="#projet_personnel">Projet personnel</a>
                 </li>
                 <li>
-                  <a href="#">
-                    <span class="icone-menu"><ion-icon name="receipt-outline"></ion-icon></span>
-                    Comptabilité
-                  </a>
+                  <a href="#projet_equipe">Projet d'équipe</a>
                 </li>
                 <li>
-                  <a href="#">
-                    <span class="icone-menu"><ion-icon name="clipboard-outline"></ion-icon></span>
-                    Stock
-                  </a>
-                </li>
-                <li class="act-show">
-                  <a href="showTask.html">
-                    <span class="icone-menu"><ion-icon name="list-outline"></ion-icon></span>
-                    Mes taches
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="icone-menu"><ion-icon name="chatbubbles-outline"></ion-icon></span>
-                    Chat
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="icone-menu"><ion-icon name="calendar-outline"></ion-icon></span>
-                    Agendas
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="icone-menu"><ion-icon name="people-outline"></ion-icon></span>
-                    Mon équipe
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="icone-menu"><ion-icon name="diamond-outline"></ion-icon></span>
-                    Abonnement
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="icone-menu"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
-                    Message
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="icone-menu"><ion-icon name="settings-outline"></ion-icon></span>
-                    Paramètre
-                  </a>
+                  <a href="#mon_equipe">Mon équipe</a>
                 </li>
               </ul>
             </div>
-        </div>
-      </div>
-      <div class="item-bloc2">
-        <div class="contente-full">
-            <div class="head-152">
-                <h4>
-                  <span><ion-icon name="information-circle-outline"></ion-icon> </span>
-                  Mes taches
-                </h4>
-                <div class="help-container">
-                  <ul>
-                    <li>
-                      <a href="#"><ion-icon name="help-outline"></ion-icon></a>
-                    </li>
-                    <li>
-                      <a href="#"><ion-icon name="notifications-outline"></ion-icon></a>
-                    </li>
-                    <li>
-                      <a href="#"><ion-icon name="person-outline"></ion-icon></a>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-            <hr />
-            <div class="container-225-i">
-                <div class="tab-container">
-                  <div class="tab-container-menu">
-                    <ul class="tab-menus">
-                      <li>
-                        <a href="#mes_projets" class="active_tab">Mes Projets</a>
-                      </li>
-                      <li>
-                        <a href="#projet_personnel">Projet personnel</a>
-                      </li>
-                      <li>
-                        <a href="#projet_equipe">Projet d'équipe</a>
-                      </li>
-                      <li>
-                        <a href="#mon_equipe">Mon équipe</a>
-                      </li>
-                    </ul>
+            <div class="tab-container-content">
+              <div>
+                <div class="menu-project">
+                  <!-- Tab links -->
+                  <div class="list-menu-project">
+                    <div class="projectLink active_proj" data-tab-target="#projects">
+                      <p>
+                        <span class="">Tous les projets</span>
+                        11
+                      </p>
+                    </div>
+                    <div class="projectLink" data-tab-target="#projectC">
+                      <p>
+                        <span>Projets en cours </span>
+                        8
+                      </p>
+                    </div>
+                    <div class="projectLink" data-tab-target="#projectT">
+                      <p>
+                        <span>Projets terminés </span>
+                        4
+                      </p>
+                    </div>
                   </div>
-                  <div class="tab-container-content">
-                    <div id="tabs-contents" class="tab-content">
-                      <div id="mes_projets" class="content active_tab">
-                        <div class="add_proj">
-                          <p><a href="#">Ajouter un projet</a></p>
-                        </div>
-                        <div class="proj_228_content">
-                          <div class="proj_228">
-                            <div class="proj_head">
-                              <div class="proj_head_65f">
-                                <div class="proj_head_3t">
-                                  <div></div>
-                                  <div></div>
-                                  <div></div>
-                                </div>
-                                <p>A faire <span>2</span> </p>
-                              </div>
-                              <p><a href="#">+ Tache</a> </p>
-                            </div>
-                            <div class="proj_head_content">
-                              <div class="card_proj">
-                                <div class="card_proj_head">
-                                  <div></div>
-                                  A faire
-                                </div>
-                                <div class="card_proj_description">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-                                </div>
-                                <div class="card_proj_users">
-                                  <span><img src="" alt=""></span>
-                                </div>
-                                <div class="card_proj_progress">
-                                  <span>322/19455</span>
-                                  <div class="card_proj_box">
-                                    <div class="card_proj_line"></div>
-                                  </div>
-                                  <p>Date limite <span>10/11/2022</span></p>
-                                </div>
-                              </div>
-                            </div>
+                  <p class="add_project">
+                    <a href="#">Ajouter un projet</a>
+                  </p>
+                </div>
+              </div>
+              <!-- Tab content -->
+              <div id="projects" data-tab-content class="active">
+                <div class="projectContent project_all">
+                  <a href="#">
+                    <div class="card_proj">
+                      <div class="card_proj_body">
+                        <div class="ti-card-proj">
+                          <p><span>Projet:</span> Web</p>
+                          <div class="bgt-3">
+                            <div></div>
+                            <div></div>
+                            <div></div>
                           </div>
-                          <p><a href="#"><ion-icon name="add-outline"></ion-icon></a></p>
+                        </div>
+                        <div class="team_dt_box">
+                          <p><span>Equipe:</span> Dévéloppeur</p>
+                          <div class="dt-258">
+                            <p>
+                              <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                            </p>
+                            <p>
+                              <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pr_bar_box">
+                          <p>Progression <span>10/20</span></p>
+                          <div class="proj_progress">
+                            <div id="progress_Proj_bar"></div>
+                          </div>
                         </div>
                       </div>
-                      <div id="projet_personnel" class="content">
-
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div id="projectC" data-tab-content>
+                <div class="projectContent project_all">
+                  <a href="#">
+                    <div class="card_proj">
+                      <div class="card_proj_body">
+                        <div class="ti-card-proj">
+                          <p><span>Projet:</span> Web</p>
+                          <div class="bgt-3">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="team_dt_box">
+                          <p><span>Equipe:</span> Dévéloppeur</p>
+                          <div class="dt-258">
+                            <p>
+                              <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                            </p>
+                            <p>
+                              <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pr_bar_box">
+                          <p>Progression <span>10/20</span></p>
+                          <div class="proj_progress">
+                            <div id="progress_Proj_bar"></div>
+                          </div>
+                        </div>
                       </div>
-                      <div id="projet_equipe" class="content">
-
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="card_proj">
+                      <div class="card_proj_body">
+                        <div class="ti-card-proj">
+                          <p><span>Projet:</span> Web</p>
+                          <div class="bgt-3">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="team_dt_box">
+                          <p><span>Equipe:</span> Dévéloppeur</p>
+                          <div class="dt-258">
+                            <p>
+                              <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                            </p>
+                            <p>
+                              <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pr_bar_box">
+                          <p>Progression <span>10/20</span></p>
+                          <div class="proj_progress">
+                            <div id="progress_Proj_bar"></div>
+                          </div>
+                        </div>
                       </div>
-                      <div id="mon_equipe" class="content">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="card_proj">
+                      <div class="card_proj_body">
+                        <div class="ti-card-proj">
+                          <p><span>Projet:</span> Web</p>
+                          <div class="bgt-3">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="team_dt_box">
+                          <p><span>Equipe:</span> Dévéloppeur</p>
+                          <div class="dt-258">
+                            <p>
+                              <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                            </p>
+                            <p>
+                              <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pr_bar_box">
+                          <p>Progression <span>10/20</span></p>
+                          <div class="proj_progress">
+                            <div id="progress_Proj_bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div id="projectT" data-tab-content>
+                <div class="projectContent project_all">
+                  <a href="#">
+                    <div class="card_proj">
+                      <div class="card_proj_body">
+                        <div class="ti-card-proj">
+                          <p><span>Projet:</span> Web</p>
+                          <div class="bgt-3">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="team_dt_box">
+                          <p><span>Equipe:</span> Dévéloppeur</p>
+                          <div class="dt-258">
+                            <p>
+                              <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                            </p>
+                            <p>
+                              <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pr_bar_box">
+                          <p>Progression <span>10/20</span></p>
+                          <div class="proj_progress">
+                            <div id="progress_Proj_bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="card_proj">
+                      <div class="card_proj_body">
+                        <div class="ti-card-proj">
+                          <p><span>Projet:</span> Web</p>
+                          <div class="bgt-3">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="team_dt_box">
+                          <p><span>Equipe:</span> Dévéloppeur</p>
+                          <div class="dt-258">
+                            <p>
+                              <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                            </p>
+                            <p>
+                              <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pr_bar_box">
+                          <p>Progression <span>10/20</span></p>
+                          <div class="proj_progress">
+                            <div id="progress_Proj_bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="card_proj">
+                      <div class="card_proj_body">
+                        <div class="ti-card-proj">
+                          <p><span>Projet:</span> Web</p>
+                          <div class="bgt-3">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="team_dt_box">
+                          <p><span>Equipe:</span> Dévéloppeur</p>
+                          <div class="dt-258">
+                            <p>
+                              <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                            </p>
+                            <p>
+                              <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pr_bar_box">
+                          <p>Progression <span>10/20</span></p>
+                          <div class="proj_progress">
+                            <div id="progress_Proj_bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="card_proj">
+                      <div class="card_proj_body">
+                        <div class="ti-card-proj">
+                          <p><span>Projet:</span> Web</p>
+                          <div class="bgt-3">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="team_dt_box">
+                          <p><span>Equipe:</span> Dévéloppeur</p>
+                          <div class="dt-258">
+                            <p>
+                              <ion-icon name="calendar-outline"></ion-icon> <span>15/11/2022</span>
+                            </p>
+                            <p>
+                              <ion-icon name="person-outline"></ion-icon> <span>11</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="pr_bar_box">
+                          <p>Progression <span>10/20</span></p>
+                          <div class="proj_progress">
+                            <div id="progress_Proj_bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Pop up Add project-->
+              <div class="custom-model-main">
+                <div class="custom-model-inner">
+                  <div class="close-btn">×</div>
+                  <div class="custom-model-wrap">
+                    <div class="pop-up-content-wrap">
+                      <div id="wrapper">
+                        <form name="signin">
+                          <div>
+                            <label for="projectName">Nom du projet</label>
+                            <input type="text" id="projectName" placeholder="Creation site web" />
+                          </div>
+                          <div>
+                            <label for="projectType">Type de projet</label>
+                            <select id="event_select" name="memeber_job">
+                              <optgroup label="Single Member Events">
+                                <option value="sdance">Solo Dancing</option>
+                                <option value="code">Coding</option>
+                                <option value="sbr">Slow Bike Race</option>
+                                <option value="chess">Chess</option>
+                                <option value="carrom">Carrom Board</option>
+                              </optgroup>
+                              <optgroup label="Group Events">
+                                <option value="gdance">Solo Dancing</option>
+                                <option value="rm">Rangoli Making</option>
+                                <option value="cs">Lan Gaming 1 Counter Strike 1.6</option>
+                                <option value="nfs">NFS Most Wanted 2005</option>
+                              </optgroup>
+                            </select>
+                          </div>
 
+                          <div>
+                            <label for="collaborator">Mes collaborateurs</label>
+                            <select id="collaborator" name="memeber_job">
+                              <optgroup label="Single Member Events">
+                                <option value="sdance">Solo Dancing</option>
+                                <option value="code">Coding</option>
+                                <option value="sbr">Slow Bike Race</option>
+                                <option value="chess">Chess</option>
+                                <option value="carrom">Carrom Board</option>
+                              </optgroup>
+                              <optgroup label="Group Events">
+                                <option value="gdance">Solo Dancing</option>
+                                <option value="rm">Rangoli Making</option>
+                                <option value="cs">Lan Gaming 1 Counter Strike 1.6</option>
+                                <option value="nfs">NFS Most Wanted 2005</option>
+                              </optgroup>
+                            </select>
+                          </div>
+
+                          <div>
+                            <label for="limitDate">Date limite</label>
+                            <input type="date" id="limitDate" placeholder="15/05/2022" />
+                          </div>
+
+                          <button type="submit">ENREGISTRER</button>
+                        </form>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="bg-overlay"></div>
+              </div>
+              <!-- END Pop up Add project-->
             </div>
-        </div>
-        <div class="dash_footer">
-          <hr />
-          <p>@copyrigth</p>
+          </div>
         </div>
       </div>
+      <div class="dash_footer">
+        <p>@copyrigth</p>
+      </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://kit.fontawesome.com/94491a0993.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-    <script src="./../asset/js/index.js" charset="utf-8"></script>
-    <!-- Include the Quill library -->
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://kit.fontawesome.com/94491a0993.js" crossorigin="anonymous"></script>
+  <script src="../../asset/js/master.js" charset="utf-8"></script>
+  <script src="../../asset/js/index.js" charset="utf-8"></script>
+  <!-- Include the Quill library -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
-    <!-- Initialize Quill editor -->
-    <script src="./../asset/js/quilleditor.js" charset="utf-8"></script>
+  <!-- Initialize Quill editor -->
+  <script src="../../asset/js/quilleditor.js" charset="utf-8"></script>
 </body>
+
 </html>

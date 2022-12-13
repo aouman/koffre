@@ -431,7 +431,43 @@
                         <div class="close-btn">×</div>
                         <div class="custom-model-wrap">
                           <div class="pop-up-content-wrap">
-                            Content Here
+                            <div id="wrapper">
+                              <form name="signin">
+                                <div>
+                                  <label for="projectName">Nom du projet</label>
+                                  <input type="text" id="projectName" placeholder="Creation site web" />
+                                </div>
+                                <div>
+                                  <label for="projectType">Type de projet</label>
+                                  <select id="event_select" name="memeber_job">
+                                    <optgroup label="Single Member Events">
+                                      <option value="sdance">Solo</option>
+                                      <option value="code">Equipe</option>
+                                    </optgroup>
+                                  </select>
+                                </div>
+
+                                <div>
+                                  <label for="collaborator">Mes collaborateurs</label>
+                                  <select id="collaborator" name="memeber_job">
+                                    <optgroup label="Single Member Events">
+                                      <option value="sdance">Solo Dancing</option>
+                                      <option value="code">Coding</option>
+                                      <option value="sbr">Slow Bike Race</option>
+                                      <option value="chess">Chess</option>
+                                      <option value="carrom">Carrom Board</option>
+                                    </optgroup>
+                                  </select>
+                                </div>
+                                
+                                <div>
+                                  <label for="limitDate">Date limite</label>
+                                  <input type="date" id="limitDate" placeholder="15/05/2022" />
+                                </div>
+                              
+                                <button type="submit">ENREGISTRER</button>
+                              </form>
+                            </div>
                           </div>
                         </div>
                       </div>

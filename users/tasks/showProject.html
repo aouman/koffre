@@ -94,7 +94,7 @@
                 <span class="icone-menu">
                   <ion-icon name="people-outline"></ion-icon>
                 </span>
-                Collaborateurs
+                Mon équipe
               </a>
             </li>
             <li>
@@ -175,71 +175,76 @@
             </div>
             <div class="tab-container-content">
               <div>
-                <div class="menu-project">
+                <div class="menu-project nav_task">
                   <!-- Tab links -->
                   <div class="list-menu-project">
-                    <div class="projectLink active_proj" data-tab-target="#allTeams">
-                      <p>
-                        <span class="">Tous les équipe</span>
-                        11
-                      </p>
-                    </div>
-                    <div class="projectLink" data-tab-target="#menbers">
-                      <p>
-                        <span>Mes collaborateurs </span>
-                        8
-                      </p>
-                    </div>
+                    <div class="preview"> <- </div>
                   </div>
-                  
-                  <p class="add_team56 add_project">
-                    <a href="#">Créer une équipe</a>
-                  </p>
+                  <!--p class="add_project">
+                    <a href="#">Ajouter un projet</a>
+                  </p-->
                 </div>
               </div>
               <!-- Tab content -->
-              <div id="allTeams" data-tab-content class="active">
+              <div id="projects">
                 <div class="projectContent project_all">
-                    <div class="card_proj_team show_team">
-                      <div class="bgt-3_team">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                      </div>
-                      <div class="teamHead">
-                        <div></div>
-                      </div>
-                      <div class="card_proj_body_team">
-                        <div class="ti-card-proj">
-                          <p class="teamType"><span>Equipe:</span> Dévéloppeur</p>
+                  <div id="mes_projets">
+                    <div class="proj_228_content">
+                      <div class="proj_228">
+                        <div class="proj_head">
+                          <div class="proj_head_65f">
+                            <div class="proj_head_3t">
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <p>A faire <span>2</span> </p>
+                          </div>
+                          <p class="addTasks">+ Tache </p>
+                        </div>
+                        <div class="proj_head_content">
+                          <div class="card_proj-task">
+                            <div class="card_proj_head">
+                              A faire
+                              <span>
+                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                              </span>
+                            </div>
+                            <div class="card_proj_description">
+                              <p>Lorem ipsum dolor sit amet...</p>
+                            </div>
+                            <div class="card_proj_users">
+                              <span>
+                                <ion-icon name="person-outline"></ion-icon>
+                              </span>
+                              5 pers
+                            </div>
+                            <div class="card_proj_progress">
+                              <p>
+                                <ion-icon name="stopwatch-outline"></ion-icon>
+                                <span>322/19455</span>
+                              </p>
+                              <div class="proj_progress-task">
+                                <div id="progress_Proj_bar_task" class="card_proj_line"></div>
+                              </div>
+                              <p><ion-icon name="calendar-outline"></ion-icon>
+                                <span>10/11/2022</span>
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
+                      <p class="add_tasks">
+                        <a href="#">
+                          <ion-icon name="add-outline"></ion-icon>
+                        </a>
+                      </p>
                     </div>
-                    
+                  </div>
                 </div>
               </div>
-              <div id="menbers" data-tab-content>
-                <div class="projectContent project_all">
-                    <div class="card_proj_team">
-                      <div class="bgt-3_team">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                      </div>
-                      <div class="card_proj_body_team card_team_member">
-                        <div class="ti-card-proj-2">
-                          <p><span class="img_team"><img src="" alt=""></span> Kouassi Kobenan</p>
-                          <p class="team_r"><span>Admin</span> <span>Dévéloppeur</span></p>
-                        </div>
-                        <div class="team_dt_box">
-                          <p>k2.aouman@gmail.com</p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <!-- Pop up Add team-->
-              <div class="custom-model-main adds_teams">
+              <!-- Pop up show task-->
+              <div class="custom-model-main showsTasks">
                 <div class="custom-model-inner">
                   <div class="close-btn">×</div>
                   <div class="custom-model-wrap">
@@ -247,9 +252,28 @@
                       <div id="wrapper">
                         <form name="signin">
                           <div>
-                            <label for="projectName">Nom d'équipe</label>
-                            <input type="text" id="projectName" placeholder="MMarketing" />
+                            <label for="projectName">Nom du projet</label>
+                            <input type="text" id="projectName" placeholder="Creation site web" />
                           </div>
+                          <div>
+                            <label for="projectType">Type de projet</label>
+                            <select id="event_select" name="memeber_job">
+                              <optgroup label="Single Member Events">
+                                <option value="sdance">Solo Dancing</option>
+                                <option value="code">Coding</option>
+                                <option value="sbr">Slow Bike Race</option>
+                                <option value="chess">Chess</option>
+                                <option value="carrom">Carrom Board</option>
+                              </optgroup>
+                              <optgroup label="Group Events">
+                                <option value="gdance">Solo Dancing</option>
+                                <option value="rm">Rangoli Making</option>
+                                <option value="cs">Lan Gaming 1 Counter Strike 1.6</option>
+                                <option value="nfs">NFS Most Wanted 2005</option>
+                              </optgroup>
+                            </select>
+                          </div>
+
                           <div>
                             <label for="collaborator">Mes collaborateurs</label>
                             <select id="collaborator" name="memeber_job">
@@ -270,8 +294,8 @@
                           </div>
 
                           <div>
-                            <label for="limitDate">Ajouter une image</label>
-                            <input type="file" id="limitDate" placeholder="15/05/2022" />
+                            <label for="limitDate">Date limite</label>
+                            <input type="date" id="limitDate" placeholder="15/05/2022" />
                           </div>
 
                           <button type="submit">ENREGISTRER</button>
@@ -283,116 +307,6 @@
                 <div class="bg-overlay"></div>
               </div>
               <!-- END Pop up Add project-->
-
-              <!-- Pop up show team-->
-              <div class="custom-model-main showTeam">
-                <div class="custom-model-inner">
-                  <div class="close-btn">×</div>
-                  <div class="action_btn">
-                    <div class="delete">58</div>
-                    <div class="update update_team">25</div>
-                  </div>
-                  <div class="custom-model-wrap">
-                    <div class="pop-up-content-wrap">
-                      <div id="wrapper">
-                        <div class="imgTeam"></div>
-                        <div class="showTeamContent">
-                          <p>Equipe : Marketing</p>
-                          <hr>
-                          <p>Les membres</p>
-                          <div class="mberTeam">
-                            <div>
-                              <img src="../../asset/medias/kofre-s.png" width="30" alt="">
-                              <p>Collins Kouassi</p>
-                            </div>
-                            <div>
-                              <img src="../../asset/medias/kofre-s.png" width="30" alt="">
-                              <p>Collins Kouassi</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bg-overlay"></div>
-              </div>
-              <!-- END Pop up show team-->
-
-              <!-- Pop up show member team-->
-              <div class="custom-model-main showMberTeam">
-                <div class="custom-model-inner showMberTeam-inner">
-                  <div class="close-btn">×</div>
-                  <div class="action_btn">
-                    <div class="delete">58</div>
-                    <div class="update">25</div>
-                  </div>
-                  <div class="custom-model-wrap">
-                    <div class="pop-up-content-wrap">
-                      <div id="wrapper">
-                        <div class="imgTeam_mber">
-                          <img src="../../asset/medias/kofre-s.png" alt="">
-                        </div>
-                        <div class="showTeamContent mber_card_show">
-                          <h4>Collins KOUASSI</h4>
-                          <p class="team_r"><span>Admin</span> <span>Dévéloppeur</span></p>
-                          <hr>
-                          <p>K2.AOUMAN@GMAIL.COM</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bg-overlay"></div>
-              </div>
-              <!-- END Pop up show member team-->
-
-              <!-- Pop up update team-->
-              <div class="custom-model-main updateTeams">
-                <div class="custom-model-inner">
-                  <div class="close-btn">×</div>
-                  <div class="custom-model-wrap">
-                    <div class="pop-up-content-wrap">
-                      <div id="wrapper">
-                        <form name="signin">
-                          <div>
-                            <label for="projectName">Nom d'équipe</label>
-                            <input type="text" id="projectName" placeholder="MMarketing" />
-                          </div>
-                          <div>
-                            <label for="collaborator">Mes collaborateurs</label>
-                            <select id="collaborator" name="memeber_job">
-                              <optgroup label="Single Member Events">
-                                <option value="sdance">Solo Dancing</option>
-                                <option value="code">Coding</option>
-                                <option value="sbr">Slow Bike Race</option>
-                                <option value="chess">Chess</option>
-                                <option value="carrom">Carrom Board</option>
-                              </optgroup>
-                              <optgroup label="Group Events">
-                                <option value="gdance">Solo Dancing</option>
-                                <option value="rm">Rangoli Making</option>
-                                <option value="cs">Lan Gaming 1 Counter Strike 1.6</option>
-                                <option value="nfs">NFS Most Wanted 2005</option>
-                              </optgroup>
-              
-                            </select>
-                          </div>
-              
-                          <div>
-                            <label for="limitDate">Ajouter une image</label>
-                            <input type="file" id="limitDate" placeholder="15/05/2022" />
-                          </div>
-              
-                          <button type="submit">MODIFIER</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bg-overlay"></div>
-              </div>
-              <!-- END Pop up update team-->
             </div>
           </div>
         </div>
