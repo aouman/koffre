@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!--Font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
-    <!--End Font-->
-    <link rel="stylesheet" href="../../asset/css/master.css">
-    <!--quil editor-->
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-    <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Raleway:wght@200;400&display=swap"
+    rel="stylesheet">
+  <!--End Font-->
+  <link rel="stylesheet" href="../../asset/css/master.css">
+  <!--quil editor-->
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <title></title>
 </head>
 <body>
     <div class="container-full">
@@ -163,15 +166,15 @@
                               </p>
                           </div>
                         </div>
-                        <p class="add_project">
-                          <a href="#">Ajouter un projet</a>
+                        <p class="add_project modal-open" data-modal="prject56">
+                          Ajouter un projet
                         </p>
                       </div>
                     </div>
                       <!-- Tab content -->
                     <div id="projects" data-tab-content class="active">
                       <div class="projectContent project_all">
-                        <a href="#">
+                        <a href="showProject.html">
                           <div class="card_proj">
                             <div class="card_proj_body">
                               <div class="ti-card-proj">
@@ -426,9 +429,9 @@
                       </div>
                     </div>
                     <!-- Pop up Add project-->
-                    <div class="custom-model-main">
+                    <div class="custom-model-main" id="prject56">
                       <div class="custom-model-inner">
-                        <div class="close-btn">×</div>
+                        <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
                         <div class="custom-model-wrap">
                           <div class="pop-up-content-wrap">
                             <div id="wrapper">
@@ -449,14 +452,16 @@
 
                                 <div>
                                   <label for="collaborator">Mes collaborateurs</label>
-                                  <select id="collaborator" name="memeber_job">
-                                    <optgroup label="Single Member Events">
-                                      <option value="sdance">Solo Dancing</option>
-                                      <option value="code">Coding</option>
-                                      <option value="sbr">Slow Bike Race</option>
-                                      <option value="chess">Chess</option>
-                                      <option value="carrom">Carrom Board</option>
-                                    </optgroup>
+                                  <select type="text" class="multiselect" multiple="multiple" role="multiselect">
+                                    <option value="0">Photos</option>
+                                    <option value="1">Link</option>
+                                    <option value="2">Edit</option>
+                                    <option value="3">Cart</option>
+                                    <option value="4">Cart</option>
+                                    <option value="5">Cart</option>
+                                    <option value="6">Cart</option>
+                                    <option value="7">Cart</option>
+                                    <option value="8">Cart</option>
                                   </select>
                                 </div>
                                 
@@ -491,8 +496,11 @@
     <script src="../../asset/js/index.js" charset="utf-8"></script>
     <!-- Include the Quill library -->
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-
+    
     <!-- Initialize Quill editor -->
     <script src="../../asset/js/quilleditor.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>

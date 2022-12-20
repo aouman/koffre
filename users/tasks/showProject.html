@@ -178,7 +178,7 @@
                 <div class="menu-project nav_task">
                   <!-- Tab links -->
                   <div class="list-menu-project">
-                    <div class="preview"> <- </div>
+                    <div class="preview"> <ion-icon name="arrow-back-outline"></ion-icon></div>
                   </div>
                   <!--p class="add_project">
                     <a href="#">Ajouter un projet</a>
@@ -203,7 +203,7 @@
                           <p class="addTasks">+ Tache </p>
                         </div>
                         <div class="proj_head_content">
-                          <div class="card_proj-task">
+                          <div class="card_proj-task modal-open" data-modal="projet_task">
                             <div class="card_proj_head">
                               A faire
                               <span>
@@ -244,9 +244,9 @@
                 </div>
               </div>
               <!-- Pop up show task-->
-              <div class="custom-model-main showsTasks">
+              <div class="custom-model-main showsTasks" id="projet_task">
                 <div class="custom-model-inner">
-                  <div class="close-btn">×</div>
+                  <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
                   <div class="custom-model-wrap">
                     <div class="pop-up-content-wrap">
                       <div id="wrapper">

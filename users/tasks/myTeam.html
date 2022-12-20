@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../../asset/css/master.css">
   <!--quil editor-->
   <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <title></title>
 </head>
 
@@ -192,15 +193,15 @@
                     </div>
                   </div>
                   
-                  <p class="add_team56 add_project">
-                    <a href="#">Créer une équipe</a>
+                  <p class="add_team56 add_project modal-open" data-modal="team56">
+                    Créer une équipe
                   </p>
                 </div>
               </div>
               <!-- Tab content -->
               <div id="allTeams" data-tab-content class="active">
                 <div class="projectContent project_all">
-                    <div class="card_proj_team show_team">
+                    <div class="card_proj_team show_team modal-open" data-modal="sTeam">
                       <div class="bgt-3_team">
                         <div></div>
                         <div></div>
@@ -226,7 +227,7 @@
                         <div></div>
                         <div></div>
                       </div>
-                      <div class="card_proj_body_team card_team_member">
+                      <div class="card_proj_body_team card_team_member modal-open" data-modal="mTeam">
                         <div class="ti-card-proj-2">
                           <p><span class="img_team"><img src="" alt=""></span> Kouassi Kobenan</p>
                           <p class="team_r"><span>Admin</span> <span>Dévéloppeur</span></p>
@@ -239,9 +240,9 @@
                 </div>
               </div>
               <!-- Pop up Add team-->
-              <div class="custom-model-main adds_teams">
+              <div class="custom-model-main adds_teams" id="team56">
                 <div class="custom-model-inner">
-                  <div class="close-btn">×</div>
+                  <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
                   <div class="custom-model-wrap">
                     <div class="pop-up-content-wrap">
                       <div id="wrapper">
@@ -252,20 +253,16 @@
                           </div>
                           <div>
                             <label for="collaborator">Mes collaborateurs</label>
-                            <select id="collaborator" name="memeber_job">
-                              <optgroup label="Single Member Events">
-                                <option value="sdance">Solo Dancing</option>
-                                <option value="code">Coding</option>
-                                <option value="sbr">Slow Bike Race</option>
-                                <option value="chess">Chess</option>
-                                <option value="carrom">Carrom Board</option>
-                              </optgroup>
-                              <optgroup label="Group Events">
-                                <option value="gdance">Solo Dancing</option>
-                                <option value="rm">Rangoli Making</option>
-                                <option value="cs">Lan Gaming 1 Counter Strike 1.6</option>
-                                <option value="nfs">NFS Most Wanted 2005</option>
-                              </optgroup>
+                            <select type="text" class="multiselect" multiple="multiple" role="multiselect">
+                              <option value="0">Photos</option>
+                              <option value="1">Link</option>
+                              <option value="2">Edit</option>
+                              <option value="3">Cart</option>
+                              <option value="4">Cart</option>
+                              <option value="5">Cart</option>
+                              <option value="6">Cart</option>
+                              <option value="7">Cart</option>
+                              <option value="8">Cart</option>
                             </select>
                           </div>
 
@@ -285,12 +282,14 @@
               <!-- END Pop up Add project-->
 
               <!-- Pop up show team-->
-              <div class="custom-model-main showTeam">
+              <div class="custom-model-main showTeam" id="sTeam">
                 <div class="custom-model-inner">
-                  <div class="close-btn">×</div>
+                  <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
                   <div class="action_btn">
-                    <div class="delete">58</div>
-                    <div class="update update_team">25</div>
+                    <div class="delete"><ion-icon name="trash-outline"></ion-icon></div>
+                    <div class="update update_team modal-open" data-modal="teamUpdate">
+                      <ion-icon name="create-outline"></ion-icon>
+                    </div>
                   </div>
                   <div class="custom-model-wrap">
                     <div class="pop-up-content-wrap">
@@ -320,13 +319,15 @@
               <!-- END Pop up show team-->
 
               <!-- Pop up show member team-->
-              <div class="custom-model-main showMberTeam">
+              <div class="custom-model-main showMberTeam" id="mTeam">
                 <div class="custom-model-inner showMberTeam-inner">
-                  <div class="close-btn">×</div>
-                  <div class="action_btn">
-                    <div class="delete">58</div>
-                    <div class="update">25</div>
-                  </div>
+                  <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
+                  <!--div class="action_btn">
+                    <div class="delete"><ion-icon name="trash-outline"></ion-icon></div>
+                    <div class="update">
+                      <ion-icon name="create-outline"></ion-icon>
+                    </div>
+                  </div-->
                   <div class="custom-model-wrap">
                     <div class="pop-up-content-wrap">
                       <div id="wrapper">
@@ -348,34 +349,29 @@
               <!-- END Pop up show member team-->
 
               <!-- Pop up update team-->
-              <div class="custom-model-main updateTeams">
+              <div class="custom-model-main updateTeams" id="teamUpdate">
                 <div class="custom-model-inner">
-                  <div class="close-btn">×</div>
+                  <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
                   <div class="custom-model-wrap">
                     <div class="pop-up-content-wrap">
                       <div id="wrapper">
-                        <form name="signin">
+                        <form name="">
                           <div>
                             <label for="projectName">Nom d'équipe</label>
                             <input type="text" id="projectName" placeholder="MMarketing" />
                           </div>
                           <div>
                             <label for="collaborator">Mes collaborateurs</label>
-                            <select id="collaborator" name="memeber_job">
-                              <optgroup label="Single Member Events">
-                                <option value="sdance">Solo Dancing</option>
-                                <option value="code">Coding</option>
-                                <option value="sbr">Slow Bike Race</option>
-                                <option value="chess">Chess</option>
-                                <option value="carrom">Carrom Board</option>
-                              </optgroup>
-                              <optgroup label="Group Events">
-                                <option value="gdance">Solo Dancing</option>
-                                <option value="rm">Rangoli Making</option>
-                                <option value="cs">Lan Gaming 1 Counter Strike 1.6</option>
-                                <option value="nfs">NFS Most Wanted 2005</option>
-                              </optgroup>
-              
+                            <select type="text" class="multiselect" multiple="multiple" role="multiselect">
+                              <option value="0">Photos</option>
+                              <option value="1">Link</option>
+                              <option value="2">Edit</option>
+                              <option value="3">Cart</option>
+                              <option value="4">Cart</option>
+                              <option value="5">Cart</option>
+                              <option value="6">Cart</option>
+                              <option value="7">Cart</option>
+                              <option value="8">Cart</option>
                             </select>
                           </div>
               
@@ -413,6 +409,9 @@
 
   <!-- Initialize Quill editor -->
   <script src="../../asset/js/quilleditor.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
 </html>
