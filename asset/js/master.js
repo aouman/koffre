@@ -25,8 +25,13 @@ $(".close-btn").click(function () {
   $(".updateTeams").removeClass('model-open');
 });
 
- //multiselect dropdown
-
+ /**
+  * 
+  *  
+  multiselect dropdown 
+  *
+  *
+  * /
 
 /**
 * bootstrap-multiselect.js
@@ -95,7 +100,7 @@ $(".close-btn").click(function () {
         }
         else {
 
-          if (options.length > 5) {
+          if (options.length > 2) {
             return options.length + ' ' + this.nSelectedText + ' <b class="caret"></b>';
           }
           else {
@@ -704,3 +709,78 @@ $(".close-btn").click(function () {
   });
 
 }(window.jQuery);
+
+/*****
+ * 
+ * checkbox avec la progresse bar
+ * 
+ * **** */
+
+// CHECKBOX LIST WITH PROGRESS BAR AND LOCAL STORAGE
+let checkboxinputs = document.querySelectorAll(".checklist-progressbar input[type='checkbox']");
+let progressbar = document.querySelector('.checklist-progressbar .progressbar-inner');
+let progressbarvalue = document.querySelector('.checklist-progressbar .progressbar-value');
+let progresspercentageNum = 0;
+let progresspercentage = "0%";
+
+// add event listener to detect checkbox changes
+for (let i = 0, len = checkboxinputs.length; i < len; i++) {
+
+  // if checkbox has an id, initialize local storage for all with key = id
+  let box = checkboxinputs[i];
+  if (box.hasAttribute("id")) {
+    setupLocalStorage(box);
+  }
+
+  // on click event listener
+  checkboxinputs[i].addEventListener('click', function (e) {
+    checkNumberofChecked();
+    updateProgressbar();
+  });
+};
+
+// CALCULATE TOTAL NUMBER OF CHECKED BOXES
+function checkNumberofChecked() {
+  let checkedboxes = 0;
+  for (let i = 0, len = checkboxinputs.length; i < len; i++) {
+    if (checkboxinputs[i].checked) {
+      checkedboxes++;
+    };
+  };
+  progresspercentageNum = ((checkedboxes / checkboxinputs.length) * 100);
+  progresspercentage = ((checkedboxes / checkboxinputs.length) * 100) + "%";
+};
+
+// UPDATE THE PROGRESS BAR
+function updateProgressbar() {
+  if (progresspercentageNum < 100) {
+    progressbar.style.backgroundColor = "red";
+  }
+  else {
+    progressbar.style.backgroundColor = "green";
+  };
+  progressbar.style.width = progresspercentage;
+  progressbarvalue.innerHTML = Math.round(progresspercentageNum) + "%";
+};
+
+// SETUP LOCAL STORAGE
+function setupLocalStorage(box) {
+  let storageId = box.getAttribute("id");
+  let oldVal = localStorage.getItem(storageId);
+
+  // initial sync with local storage
+  if (oldVal == "true") {
+    box.checked = true;
+  } else {
+    box.checked = false;
+  };
+
+  box.addEventListener("change", function () {
+    localStorage.setItem(storageId, this.checked);
+  });
+
+};
+
+// INIT PROGRESS BAR 
+checkNumberofChecked();
+updateProgressbar();

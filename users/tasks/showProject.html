@@ -17,9 +17,9 @@
   <link rel="stylesheet" href="../../asset/css/master.css">
   <!--quil editor-->
   <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <title></title>
 </head>
-
 <body>
   <div class="container-full">
     <div class="items-bloc1">
@@ -42,7 +42,7 @@
               </a>
             </li>
             <li class="">
-              <a href="../information.html">
+              <a href="../info/information.html">
                 <span class="icone-menu">
                   <ion-icon name="information-circle-outline"></ion-icon>
                 </span>
@@ -180,9 +180,6 @@
                   <div class="list-menu-project">
                     <div class="preview"> <ion-icon name="arrow-back-outline"></ion-icon></div>
                   </div>
-                  <!--p class="add_project">
-                    <a href="#">Ajouter un projet</a>
-                  </p-->
                 </div>
               </div>
               <!-- Tab content -->
@@ -200,10 +197,10 @@
                             </div>
                             <p>A faire <span>2</span> </p>
                           </div>
-                          <p class="addTasks">+ Tache </p>
+                          <p class="addTasks modal-open" data-modal="projet_task">+ Tache </p>
                         </div>
                         <div class="proj_head_content">
-                          <div class="card_proj-task modal-open" data-modal="projet_task">
+                          <div class="card_proj-task modal-open" data-modal="projet_task-show">
                             <div class="card_proj_head">
                               A faire
                               <span>
@@ -243,62 +240,88 @@
                   </div>
                 </div>
               </div>
-              <!-- Pop up show task-->
+              <!-- Pop up add task-->
               <div class="custom-model-main showsTasks" id="projet_task">
-                <div class="custom-model-inner">
+                <div class="custom-model-inner" id="staskPop">
                   <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
                   <div class="custom-model-wrap">
                     <div class="pop-up-content-wrap">
-                      <div id="wrapper">
-                        <form name="signin">
-                          <div>
-                            <label for="projectName">Nom du projet</label>
-                            <input type="text" id="projectName" placeholder="Creation site web" />
+                      <div id="wrapper-t">
+                        <form name="signin" id="wrapper-2">
+                          <div class="left-form">
+                            <div>
+                              <div>
+                                <input type="text" id="taskName" placeholder="Titre" />
+                                <input type="date" id="date_limit" placeholder="Date limite" />
+                              </div>
+                            </div>
+                            <div>
+                              <label for="projectType">Description</label>
+                              <textarea class="task_des" id="" name="taskDescription" rows="4" cols="50"></textarea>
+                            </div>
+                            <div>
+                              <label for="projectType">Piece joindre</label>
+                            </div>
+                            <div>
+                              <label for="projectType">Activités à réaliser</label>
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Poste sur les resau</label>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Poste sur les resau</label>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Poste sur les resau</label>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
-                          <div>
-                            <label for="projectType">Type de projet</label>
-                            <select id="event_select" name="memeber_job">
-                              <optgroup label="Single Member Events">
-                                <option value="sdance">Solo Dancing</option>
-                                <option value="code">Coding</option>
-                                <option value="sbr">Slow Bike Race</option>
-                                <option value="chess">Chess</option>
-                                <option value="carrom">Carrom Board</option>
-                              </optgroup>
-                              <optgroup label="Group Events">
-                                <option value="gdance">Solo Dancing</option>
-                                <option value="rm">Rangoli Making</option>
-                                <option value="cs">Lan Gaming 1 Counter Strike 1.6</option>
-                                <option value="nfs">NFS Most Wanted 2005</option>
-                              </optgroup>
-                            </select>
-                          </div>
+                          <div class="right-form">
+                            <div>
+                              <label for="projectType">Type de projet</label>
+                              <select id="event_select" name="memeber_job">
+                                  <option value="carrom">Carrom Board</option>
+                                  <option value="carrom">Carrom Board</option>
+                              </select>
+                            </div>
 
-                          <div>
-                            <label for="collaborator">Mes collaborateurs</label>
-                            <select id="collaborator" name="memeber_job">
-                              <optgroup label="Single Member Events">
-                                <option value="sdance">Solo Dancing</option>
-                                <option value="code">Coding</option>
-                                <option value="sbr">Slow Bike Race</option>
-                                <option value="chess">Chess</option>
-                                <option value="carrom">Carrom Board</option>
-                              </optgroup>
-                              <optgroup label="Group Events">
-                                <option value="gdance">Solo Dancing</option>
-                                <option value="rm">Rangoli Making</option>
-                                <option value="cs">Lan Gaming 1 Counter Strike 1.6</option>
-                                <option value="nfs">NFS Most Wanted 2005</option>
-                              </optgroup>
-                            </select>
-                          </div>
+                            <div>
+                              <label for="collaborator">Mes collaborateurs</label>
+                              <select type="text" class="multiselect" multiple="multiple" role="multiselect">
+                                <option value="0">Photos</option>
+                                <option value="1">Link</option>
+                                <option value="2">Edit</option>
+                                <option value="3">Cart</option>
+                                <option value="4">Cart</option>
+                                <option value="5">Cart</option>
+                                <option value="6">Cart</option>
+                                <option value="7">Cart</option>
+                                <option value="8">Cart</option>
+                              </select>
+                            </div>
 
-                          <div>
-                            <label for="limitDate">Date limite</label>
-                            <input type="date" id="limitDate" placeholder="15/05/2022" />
-                          </div>
+                            <div>
+                              <input type="button" id="limitDate" value="Ajouter des activités" />
+                            </div>
 
-                          <button type="submit">ENREGISTRER</button>
+                            <div>
+                              <label for="limitDate">Date limite</label>
+                              <input type="file" id="limitDate" placeholder="15/05/2022" />
+                            </div>
+
+                            <button type="submit">ENREGISTRER</button>
+                          </div>
+                   
                         </form>
                       </div>
                     </div>
@@ -306,7 +329,210 @@
                 </div>
                 <div class="bg-overlay"></div>
               </div>
-              <!-- END Pop up Add project-->
+              <!-- END Pop up Add task-->
+
+              <!-- Pop up edit task-->
+              <div class="custom-model-main showsTasks" id="projet_task-edit">
+                <div class="custom-model-inner" id="staskPop">
+                  <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
+                  <div class="custom-model-wrap">
+                    <div class="pop-up-content-wrap">
+                      <div id="wrapper-t">
+                        <form name="signin" id="wrapper-2">
+                          <div class="left-form">
+                            <div>
+                              <div>
+                                <input type="text" id="taskName" placeholder="Titre" />
+                                <input type="date" id="date_limit" placeholder="Date limite" />
+                              </div>
+                            </div>
+                            <div>
+                              <label for="projectType">Description</label>
+                              <textarea class="task_des" id="" name="taskDescription" rows="4" cols="50"></textarea>
+                            </div>
+                            <div>
+                              <label for="projectType">Piece joindre</label>
+                            </div>
+                            <div>
+                              <label for="projectType">Activités à réaliser</label>
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Poste sur les resau</label>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Poste sur les resau</label>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Poste sur les resau</label>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="right-form">
+                            <div>
+                              <label for="projectType">Type de projet</label>
+                              <select id="event_select" name="memeber_job">
+                                <option value="carrom">Carrom Board</option>
+                                <option value="carrom">Carrom Board</option>
+                              </select>
+                            </div>
+              
+                            <div>
+                              <label for="collaborator">Mes collaborateurs</label>
+                              <select type="text" class="multiselect" multiple="multiple" role="multiselect">
+                                <option value="0">Photos</option>
+                                <option value="1">Link</option>
+                                <option value="2">Edit</option>
+                                <option value="3">Cart</option>
+                                <option value="4">Cart</option>
+                                <option value="5">Cart</option>
+                                <option value="6">Cart</option>
+                                <option value="7">Cart</option>
+                                <option value="8">Cart</option>
+                              </select>
+                            </div>
+              
+                            <div>
+                              <input type="button" id="limitDate" value="Ajouter des activités" />
+                            </div>
+              
+                            <div>
+                              <label for="limitDate">Date limite</label>
+                              <input type="file" id="limitDate" placeholder="15/05/2022" />
+                            </div>
+              
+                            <button type="submit">ENREGISTRER</button>
+                          </div>
+              
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-overlay"></div>
+              </div>
+              <!-- END Pop up edit task-->
+
+              <!-- Pop up show task-->
+              <div class="custom-model-main showsTasks" id="projet_task-show">
+                <div class="custom-model-inner" id="staskup-Show">
+                  <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
+                  <div class="action_btn">
+                    <div class="delete"><ion-icon name="trash-outline"></ion-icon></div>
+                    <div class="update update_team modal-open" data-modal="teamUpdate">
+                      <ion-icon name="create-outline"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="custom-model-wrap custom-model-wrap-32" style="height: 560px;">
+                    <div class="pop-up-content-wrap">
+                      <div id="wrapper-t-show">
+                        <div class="content_show_left_t">
+                          <div class="tle_show_t">
+                            <h4>Le titre</h4>
+                            <h6>Date limite : <span>25/05/2022</span></h6>
+                          </div>
+                          <div class="show_des_t">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ut rerum ab, pariatur unde beatae quod, saepe ullam aliquid mollitia voluptates? Ipsum commodi dolores sint aperiam enim neque qui assumenda. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod eos tenetur rerum! Quae error quaerat, dignissimos adipisci tenetur enim, aliquid ex id consequatur temporibus laboriosam maxime earum excepturi, repudiandae soluta?</p>
+                          </div>
+                          <div>
+                            <div class="pi_show_t">
+                              Les pièces joindres
+                            </div>
+                            <div class="t_show_t">
+                              <div class="progressbar-container">
+                                <div class="progressbar-bar"></div>
+                                <div class="progressbar-label"></div>
+                              </div>
+                              <div class="ready"></div>
+                              <!--div class="proj_progress-task">
+                                <div id="progress_Proj_bar_task" class="card_proj_line"></div>
+                              </div-->
+                              <div class="new checklist-progressbar">
+                                <div class="progressbar">
+                                  <div class="progressbar-inner"></div>
+                                  <div class="progressbar-value"></div>
+                                </div>
+                                <form>
+                                  <div class="form-group">
+                                    <input type="checkbox" id="html">
+                                    <label for="html">HTML</label>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="checkbox" id="css">
+                                    <label for="css">CSS</label>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="checkbox" id="javascript">
+                                    <label for="javascript">Javascript</label>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="checkbox" id="javascript1">
+                                    <label for="javascript1">Javascript</label>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="checkbox" id="javascript2">
+                                    <label for="javascript2">Javascript</label>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="checkbox" id="javascript3">
+                                    <label for="javascript3">Javascript</label>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="checkbox" id="javascript4">
+                                    <label for="javascript4">Javascript</label>
+                                  </div>
+                                </form>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <div class="wrapperz">
+                              <!--div class="title">Simple Chatbot</div-->
+                              <div class="box">
+                                  <div class="item">
+                                      <div class="icon">
+                                          <i class="fa fa-user"></i>
+                                      </div>
+                                      <div class="msg">
+                                          <p>Hello everyone, How are you?</p>
+                                      </div>
+                                  </div>
+                                  <br clear="both">
+                                  <div class="item right">
+                                      <div class="msg">
+                                          <p>Nice</p>
+                                      </div>
+                                  </div>
+                                                                                                 
+                              </div>
+                              
+                              <div class="typing-area">
+                                  <div class="input-field">
+                                      <input type="text" placeholder="Type your message" required>
+                                      <button><ion-icon name="send-outline"></ion-icon></button>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-overlay"></div>
+              </div>
+              <!-- END Pop up show task-->
             </div>
           </div>
         </div>
@@ -324,9 +550,13 @@
   <script src="../../asset/js/index.js" charset="utf-8"></script>
   <!-- Include the Quill library -->
   <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-
+  
   <!-- Initialize Quill editor -->
   <script src="../../asset/js/quilleditor.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script-->
 </body>
 
 </html>

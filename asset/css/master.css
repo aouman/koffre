@@ -725,7 +725,8 @@ td, th {
 }
 
 #wrapper form div input,
-#wrapper form div select{
+#wrapper form div select,
+#wrapper form div textarea{
   background: none;
   border: none;
   outline: none;
@@ -765,6 +766,62 @@ td, th {
   border: none;
 }
 
+#wrapper-t form {
+  padding: 15px;
+  border: 2px solid #4fa2c3;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 27%);
+}
+
+#wrapper-t form div{
+  
+}
+
+#wrapper-t form div input,
+#wrapper-t form div select,
+#wrapper-t form div textarea {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 27%);
+}
+
+#wrapper-t form div select:focus-visible {
+  border: 2px solid #4fa2c3;
+}
+
+#wrapper-t form div input:focus-visible {
+  border: 2px solid #4fa2c3 !important;
+}
+
+#wrapper-t form div input:focus {
+  border: 2px solid #4fa2c3 !important;
+}
+
+#wrapper-t form button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  margin: 15px 0;
+  border: none;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 27%);
+  background: #fff;
+  color: #4fa2c3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#wrapper-t form button:hover {
+  background: #4fa2c3;
+  color: #fff;
+  border: none;
+}
+
+
 .proj_228_content{
   display: flex;
 }
@@ -788,6 +845,30 @@ td, th {
     0px 0px 10px 1px rgb(0 0 0 / 19%);
 }
 
+.task_des{
+  max-width: max-content;
+  max-height: 130px;
+  min-height: 125px;
+  min-width: 360px;
+}
+.left-form{
+  max-width: 450px;
+  width: 400px;
+}
+
+#staskup-Show{
+  width: 75%!important;
+}
+
+.right-form{
+  width: 250px;
+  padding: 5px;
+}
+.right-form select,
+.right-form div > input{
+  width: -webkit-fill-available;
+  border-radius: 25px!important;
+}
 .proj_head{
   display: flex;
   justify-content: space-between;
@@ -1025,6 +1106,16 @@ background: #15dd1f;
   color: #4fa2c3;
 }
 
+#staskPop{
+  width: 850px;
+}
+
+#staskPop form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .open>.dropdown-menu {
   display: block;
   width: 100%;
@@ -1074,4 +1165,248 @@ background: #15dd1f;
 
 .custom-btn button{
   height: 50px;
+}
+
+.show_des_t{
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.tle_show_t{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content_show_left_t{
+  max-width: 600px;
+  width: 500px;
+  max-height: 500px;
+  height: 495px;
+  overflow-y: auto;
+}
+
+.content_show_left_t > div{
+  margin: 15px 0;
+}
+
+#wrapper-t-show{
+  display: flex;
+  justify-content: space-between;
+}
+
+.t_show_t .proj_progress-task,
+.t_show_t .proj_progress-task #progress_Proj_bar_task{
+  height: 10px;
+}
+
+.t_show_t,
+.t_show_t ul{
+  padding: 10px 0;
+}
+
+/*tchat task*/
+.wrapperz {
+  width: 460px;
+}
+
+.wrapperz .title {
+  background: #007bff;
+  color: white;
+  line-height: 2.5;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.wrapperz .box {
+  border: 1px solid #efefef;
+  padding: 10px 15px;
+  min-height: 400px;
+  max-height: 470px;
+  height: 450px;
+  overflow-y: auto;
+}
+
+.wrapperz .box .item {
+  display: flex;
+  float: left;
+  margin: 10px 0;
+}
+
+.wrapperz .box .item .icon {
+  background: #007bff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.wrapperz .box .item .msg {
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+  width: 150px;
+  margin-left: 10px;
+}
+
+.wrapperz .box .item .msg p {
+  padding: 10px;
+}
+
+.wrapperz .box .item.right {
+  float: right;
+}
+
+.wrapperz .box .item.right .msg {
+  background: #efefef;
+  color: #333;
+}
+
+.wrapperz .typing-area {
+  width: 100%;
+  background: #efefef;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.wrapperz .typing-area .input-field {
+  width: 100%;
+  position: relative;
+}
+
+.wrapperz .typing-area .input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  padding-right: 70px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s all ease;
+}
+
+.wrapperz .typing-area .input-field input:focus {
+  border-color: #007bff;
+}
+
+.wrapperz .typing-area .input-field button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1px solid #007bff;
+  padding: 0px 10px;
+  border-radius: 3px;
+  color: #007bff;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s all ease;
+}
+
+.wrapperz .typing-area .input-field button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.wrapperz .typing-area .input-field input:valid~button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.new {
+  padding: 5px 0;
+}
+.new form{
+  padding: 15px 0;
+}
+.form-group {
+  display: block;
+  margin-bottom: 5px!important;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input:checked+label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  width: 6px;
+  height: 12px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checklist-progressbar .progressbar {
+  box-sizing: content-box;
+  position: relative;
+  border-radius: 15px;
+  background-color: #ddd;
+  height: 10px;
+  margin-top: 1.5em;
+  margin-right: 2.6em;
+}
+
+.checklist-progressbar .progressbar .progressbar-inner {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: green;
+  transition: all .3s linear;
+  border-radius: 15px;
+}
+
+.checklist-progressbar .progressbar .progressbar-value {
+  position: absolute;
+  top: -.25em;
+  right: -2.6em;
+  min-width: 2.6em;
+  width: 15%;
+  font-size: 1em;
+  line-height: 1;
+  text-align: right;
 }
