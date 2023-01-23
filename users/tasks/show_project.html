@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../asset/css/masters.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Raleway:wght@200;400&display=swap"
+        rel="stylesheet">
+    <!--End Font-->
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div>
+        <div class="d-flex contente-full">
+            <div class="nav_main shadow">
+                <div class="text-center py-2">
+                    <img src="../../asset/medias/kofre.png" width="120" alt="">
+                </div>
+                <nav class="main__menu nav flex-column pe-3">
+                    <a class="nav-link d-flex justify-content-start align-items-center active" aria-current="page" href="#">
+                        <span class="pe-3"><i class="bi bi-speedometer2"></i></span>
+                        Accueil
+                    </a>
+                    <a class="nav-link d-flex justify-content-start align-items-center" href="#">
+                        <span class="pe-3"><i class="bi bi-info-circle-fill"></i></span>
+                        Information
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><i class="bi bi-bank2"></i></span>
+                        Comptabilité
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><i class="bi bi-clipboard2-check"></i></span>
+                        Mes Stocks
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><i class="bi bi-list-task"></i></span>
+                        Mes taches
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><i class="bi bi-wechat"></i></span>
+                        Chat
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><i class="bi bi-calendar-date"></i></span>
+                        Agendas
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><i class="bi bi-people-fill"></i></span>
+                        Mon Equipe
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><i class="bi bi-wallet2"></i></span>
+                        Abonnement
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><i class="bi bi-chat-dots"></i></span>
+                        Message
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><i class="bi bi-gear"></i></span>
+                        Paramètre
+                    </a>
+                </nav>
+            </div>
+            <div class="content_np">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 py-1 border-bottom">
+                            <div class="d-flex justify-content-between py-2">
+                                <div class="shadow p-3 px-5 rounded-pill text-uppercase "> 
+                                    <span class="pe-3"><i class="bi bi-list-task"></i></span>
+                                    Mes Taches
+                                </div>
+                                <div class="menu__content d-flex align-content-center justify-content-between">
+                                    <a href="#" class="btn rounded-circle pe-4 me-4 shadow-sm"><i class="bi bi-question-lg"></i></a>
+                                    <a href="#" class="btn rounded-circle pe-4 me-4 shadow-sm"><i class="bi bi-bell"></i></a>
+                                    <div class="dropdown">
+                                        <a class="btn rounded-circle pe-4 me-4 shadow-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="bi bi-person-circle"></i>
+                                        </a>
+                                    
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12 d-flex justify-content-between align-content-center mt-3">
+                            <span class="btn shadow py-2 px-md-5 px-3 rounded-pill "><i class="bi bi-arrow-left"></i></span>
+                            <span class="btn shadow rounded-circle bg_color text-white fw-bold"><i class="bi bi-plus-lg"></i></span>
+                        </div>
+                    </div>
+                    <div class="row p-3 block__task">
+                        <div class="d-flex">
+                            <div class="col-md-4 me-3">
+                                <div class="p-md-4 p-2 bg_task">
+                                    <div class="d-flex justify-content-between align-items-baseline">
+                                        <p class="badge text-dark">A faire</p>
+                                        <div>
+                                            <p class="badge btn text-success">+ Taches</p>
+                                            <span class="btn"><i class="bi bi-three-dots-vertical"></i></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card mb-3 shadow-sm border-0">
+                                            <a href="#">
+                                                <div class="card-body">
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">Lorem ipsum dolor sit amet ...</li>
+                                                        <li class="list-group-item d-flex align-items-baseline justify-content-between"> <span><i
+                                                                    class="bi bi-people-fill"></i></span> 9 pers</li>
+                                                        <li class="list-group-item d-flex justify-content-between"> <span><i class="bi-calendar-check"></i>
+                                                            </span> 15/02/2023
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <p class="d-flex justify-content-between">Progression <span>10/20</span></p>
+                                                            <div class="progress" style="height: 5px;">
+                                                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 me-3">
+                                <div class="p-md-4 p-2 bg_task">
+                                    <div class="d-flex justify-content-between align-items-baseline">
+                                        <p class="badge text-dark">A faire</p>
+                                        <div>
+                                            <p class="badge btn text-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop__add_task">+ Taches</p>
+                                            <span class="btn"><i class="bi bi-three-dots-vertical"></i></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="card mb-3 shadow-sm border-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <div class="card-body">
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">An item</li>
+                                                        <li class="list-group-item d-flex align-items-baseline justify-content-between"> <span><i
+                                                                    class="bi bi-people-fill"></i></span> 5 pers </li>
+                                                        <li class="list-group-item d-flex justify-content-between"> <span><i class="bi-calendar-check"></i>
+                                                            </span> 15/02/2023</li>
+                                                        <li class="list-group-item">
+                                                            <p class="d-flex justify-content-between">Progression <span>10/20</span></p>
+                                                            <div class="progress" style="height: 5px;">
+                                                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                                                    aria-valuemin="0" aria-valuemax="100">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                        
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal show task -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="">
+                        <button type="button" class="btn-close close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                        <button type="button" class="btn-close close-btn close-btn-e bg-success" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button type="button" class="btn-close close-btn close-btn-d bg-danger" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-trash3"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="content__task p-2">
+                                    <div class="d-flex justify-content-between align-items-baseline mb-3">
+                                        <h5>Le titre du projet</h5>
+                                        <p class="fw-bold">Date limite : <span class="badge text-danger">15/03/2023</span> </p>
+                                    </div>
+                                    <div class="bg-light p-md-4 mb-3">
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ab laudantium fugit, velit quos facilis eligendi quasi cumque aliquam nulla in repudiandae nisi dolores voluptatibus dignissimos beatae cum quibusdam mollitia!
+                                        </p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p>Pièce joindre</p>
+                                        <div id="download__join" class="d-flex flex-wrap content__joint">
+                                            <div class="bg-light p-2 rounded-pill mb-2 me-2" id="download">kofigeng.png</div>
+                                            <div class="bg-light p-2 rounded-pill mb-2 me-2" id="download">kofigenghlid mhjfmn ^pmJF%F%F.png</div>
+                                            <div class="bg-light p-2 rounded-pill mb-2 me-2" id="download">kofigenghlid mhjfmn ^pmJF%F%F.png</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <!--LA CHECK LISTE DES TACHES-->
+                                        <div class="t_show_t">
+                                            <div class="new checklist-progressbar">
+                                                <div class="progressbar mb-3">
+                                                    <div class="progressbar-inner"></div>
+                                                    <div class="progressbar-value"></div>
+                                                </div>
+                                                <form>
+                                                    <div class="form-group checkliste__box">
+                                                        <input type="checkbox" id="html">
+                                                        <label for="html">HTML</label>
+                                                    </div>
+                                                    <div class="form-group checkliste__box">
+                                                        <input type="checkbox" id="css">
+                                                        <label for="css">CSS</label>
+                                                    </div>
+                                                    <div class="form-group checkliste__box">
+                                                        <input type="checkbox" id="javascript">
+                                                        <label for="javascript">Javascript</label>
+                                                    </div>
+                                                    <div class="form-group checkliste__box">
+                                                        <input type="checkbox" id="javascript1">
+                                                        <label for="javascript1">Javascript</label>
+                                                    </div>
+                                                    <div class="form-group checkliste__box">
+                                                        <input type="checkbox" id="javascript2">
+                                                        <label for="javascript2">Javascript</label>
+                                                    </div>
+                                                    <div class="form-group checkliste__box">
+                                                        <input type="checkbox" id="javascript3">
+                                                        <label for="javascript3">Javascript</label>
+                                                    </div>
+                                                    <div class="form-group checkliste__box">
+                                                        <input type="checkbox" id="javascript4">
+                                                        <label for="javascript4">Javascript</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div>
+                                    <div class="wrapperz">
+                                        <div class="chatTask">
+                                            <div class="chatTask__wrapper">
+                                                <div class="chatTask__message chatTask__message-her">
+                                                    <div class="chatTask__message_pers">
+                                                        <div class="pers_name">Arsene</div>
+                                                        <div class="date">15/25/2022</div>
+                                                    </div>
+                                                    <div>Message #1</div>
+                                                </div>
+                                                <div class="chatTask__message chatTask__message-own">
+                                                    <div class="date"></div>
+                                                    <div>Message #2</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chatTask__form">
+                                            <form id="chatTask__form">
+                                                <input id="text-message" type="text" placeholder="Votre message ici ...">
+                                                <button type="submit"><i class="bi bi-send"></i></button>
+                                            </form>
+                                        </div>
+                                        <div id="result"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END Modal Show task-->
+
+        <!-- Modal add task-->
+        <div class="modal fade" id="staticBackdrop__add_task" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdrop__add_taskLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="">
+                        <button type="button" class="btn-close close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="" id="wrapper-t">
+                            <form>
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingInput" placeholder="marketing">
+                                                    <label for="floatingInput">Titre</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="date" class="form-control" id="floatingInput" placeholder="15/05/2023">
+                                                    <label for="floatingInput">Date limite</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                                        style="height: 100px"></textarea>
+                                                    <label for="floatingTextarea2">Description</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p>Pièces joindre</p>
+                                                <div class="d-flex">
+                                                    <div id="file__input"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p>Mes taches</p>
+                                                <div id="req_input" class="datainputs">
+                                                    <!--Ajout des petites taches à faire-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <label for="floatingSelect">Works with selects</label>
+                                        </div>
+                                        <label for="collaborator">Mes collaborateurs</label>
+                                        <div class="multiSelect">
+                                            <select multiple class="multiSelect_field" data-placeholder="Ajouter un collaborateur">
+                                                <option value="chrome">Chrome</option>
+                                                <option value="firefox">Firefox</option>
+                                                <option value="opera">Opera</option>
+                                                <option value="safari">Safari</option>
+                                                <option value="edge">Edge</option>
+                                                <option value="vivaldi">Vivaldi</option>
+                                            </select>
+                                        </div>
+
+                                        <div>
+                                            <input type="button" class="" id="addmore" value="Ajouter des activités" />
+                                        </div>
+
+                                        <div class="file">
+                                            <div class="file__input" id="">
+                                                <label class="file__input--label" for="customFile" data-text-btn="Télécharger un fichier">Add file:</label>
+                                                <input class="file__input--file" id="customFile" type="file" multiple="multiple" name="files[]" />
+                                        
+                                            </div>
+                                        </div>
+                                        <button class="btn" type="submit">Enregistrer</button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <!--div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div-->
+                    <div class="modal-body" id="wrapper">
+                    <button type="button" class="btn-close close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                    <form name="signin">
+                        <div>
+                            <label for="projectName">Nom du projet</label>
+                            <input type="text" id="projectName" placeholder="Creation site web" />
+                        </div>
+                        <div>
+                            <label for="projectType">Type de projet</label>
+                            <select id="event_select" name="memeber_job">
+                                <option value="sdance">Equipe</option>
+                                <option value="code">Personnel</option>
+                            </select>
+                        </div>
+                    
+                        <div>
+                            <label for="collaborator">Mes collaborateurs</label>
+                            <div class="multiSelect">
+                                <select multiple class="multiSelect_field" data-placeholder="Ajouter un collaborateur">
+                                    <option value="chrome">Chrome</option>
+                                    <option value="firefox">Firefox</option>
+                                    <option value="opera">Opera</option>
+                                    <option value="safari">Safari</option>
+                                    <option value="edge">Edge</option>
+                                    <option value="vivaldi">Vivaldi</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconX">
+                                <g stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </g>
+                            </symbol>
+                        </svg>
+                    
+                        <div>
+                            <label for="limitDate">Date limite</label>
+                            <input type="date" id="limitDate" placeholder="15/05/2022" />
+                        </div>
+                    
+                        <button type="submit">ENREGISTRER</button>
+                    </form>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="../../asset/js/multiselect.js"></script>
+    <script src="../../asset/js/index.js"></script>
+    <script src="../../asset/js/piece_joind.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        jQuery(function() {
+  jQuery('.multiSelect').each(function(e) {
+    var self = jQuery(this);
+    var field = self.find('.multiSelect_field');
+    var fieldOption = field.find('option');
+    var placeholder = field.attr('data-placeholder');
+
+    field.hide().after(`<div class="multiSelect_dropdown"></div>
+                        <span class="multiSelect_placeholder">` + placeholder + `</span>
+                        <ul class="multiSelect_list"></ul>
+                        <span class="multiSelect_arrow"></span>`);
+    
+    fieldOption.each(function(e) {
+      jQuery('.multiSelect_list').append(`<li class="multiSelect_option" data-value="`+jQuery(this).val()+`">
+                                            <a class="multiSelect_text">`+jQuery(this).text()+`</a>
+                                          </li>`);
+    });
+    
+    var dropdown = self.find('.multiSelect_dropdown');
+    var list = self.find('.multiSelect_list');
+    var option = self.find('.multiSelect_option');
+    var optionText = self.find('.multiSelect_text');
+    
+    dropdown.attr('data-multiple', 'true');
+    list.css('top', dropdown.height() + 5);
+    
+    option.click(function(e) {
+      var self = jQuery(this);
+			e.stopPropagation();
+	    self.addClass('-selected');
+	    field.find('option:contains(' + self.children().text() + ')').prop('selected', true);
+      dropdown.append(function(e) {
+        return jQuery('<span class="multiSelect_choice">'+ self.children().text() +'<svg class="multiSelect_deselect -iconX"><use href="#iconX"></use></svg></span>').click(function(e) {
+          var self = jQuery(this);
+          e.stopPropagation();
+          self.remove();
+          list.find('.multiSelect_option:contains(' + self.text() + ')').removeClass('-selected');
+          list.css('top', dropdown.height() + 5).find('.multiSelect_noselections').remove();
+          field.find('option:contains(' + self.text() + ')').prop('selected', false);
+          if (dropdown.children(':visible').length === 0) {
+            dropdown.removeClass('-hasValue');
+          }
+        });
+      }).addClass('-hasValue');
+	    list.css('top', dropdown.height() + 5);
+	    if (!option.not('.-selected').length) {
+	      list.append('<h5 class="multiSelect_noselections">No Selections</h5>');
+	    }
+    });
+    
+    dropdown.click(function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      dropdown.toggleClass('-open');
+      list.toggleClass('-open').scrollTop(0).css('top', dropdown.height() + 5);
+    });
+    
+    jQuery(document).on('click touch', function(e) {
+        if (dropdown.hasClass('-open')) {
+            dropdown.toggleClass('-open');
+            list.removeClass('-open');
+        }
+    });
+  });
+});
+
+
+    $(document).ready(function () {
+        $("#addmore").click(function () {
+            $("#req_input").append(
+                '<div class="required_inp"><input id="addTaskCheck" name="fname" placeholder="Taches" type="text">' +
+                '<button class="inputRemove"><ion-icon name="close-outline"></ion-icon></button></div>'
+            );
+        });
+        $('body').on('click', '.inputRemove', function () {
+            $(this).parent('div.required_inp').remove()
+        });
+
+        $("#addmoreEdit").click(function () {
+            $("#req_inputEdit").append(
+                '<div class="required_inp"><input id="addTaskCheckEdit" name="fname" placeholder="Taches" type="text">' +
+                '<button class="inputRemove"><ion-icon name="close-outline"></ion-icon></button></div>'
+            );
+        });
+        $('body').on('click', '.inputRemove', function () {
+            $(this).parent('div.required_inp').remove()
+        });
+    });
+    </script>
+</body>
+
+</html>

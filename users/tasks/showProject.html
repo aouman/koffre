@@ -157,33 +157,22 @@
         </div>
         <div class="container-225-i">
           <div class="tab-container">
-            <div class="tab-container-menu">
-              <ul class="tab-menus">
-                <li>
-                  <a href="#mes_projets" class="active_tab">Mes Projets</a>
-                </li>
-                <li>
-                  <a href="#projet_personnel">Projet personnel</a>
-                </li>
-                <li>
-                  <a href="#projet_equipe">Projet d'équipe</a>
-                </li>
-                <li>
-                  <a href="#mon_equipe">Mon équipe</a>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-container-content">
-              <div>
-                <div class="menu-project nav_task">
+            <div class="tab-container-content__task">
+              <div class="nav__add_tasks">
+                <div class="menu-project nav_task back-button ">
                   <!-- Tab links -->
                   <div class="list-menu-project">
-                    <div class="preview"> <ion-icon name="arrow-back-outline"></ion-icon></div>
+                      <div class="preview"> <ion-icon name="arrow-back-outline"></ion-icon></div>
                   </div>
+                </div>
+                <div class="add_tasks">
+                  <p>
+                    <ion-icon name="add-outline"></ion-icon>
+                  </p>
                 </div>
               </div>
               <!-- Tab content -->
-              <div id="projects">
+              <div id="projects__task">
                 <div class="projectContent project_all">
                   <div id="mes_projets">
                     <div class="proj_228_content">
@@ -231,11 +220,6 @@
                           </div>
                         </div>
                       </div>
-                      <p class="add_tasks">
-                        <a href="#">
-                          <ion-icon name="add-outline"></ion-icon>
-                        </a>
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -250,7 +234,7 @@
                         <form name="signin" id="wrapper-2">
                           <div class="left-form">
                             <div>
-                              <div>
+                              <div style="display: flex; flex-wrap: wrap; justify-content:space-between;">
                                 <input type="text" id="taskName" placeholder="Titre" />
                                 <input type="date" id="date_limit" placeholder="Date limite" />
                               </div>
@@ -259,39 +243,25 @@
                               <label for="projectType">Description</label>
                               <textarea class="task_des" id="" name="taskDescription" rows="4" cols="50"></textarea>
                             </div>
-                            <div>
-                              <label for="projectType">Piece joindre</label>
+
+                            <p for="projectType">Piece joindre</p>
+                            <div class="joind_225">
+                              <div id="file__input"></div>
                             </div>
-                            <div>
+                            
+                            <div class="boxMiniTask">
                               <label for="projectType">Activités à réaliser</label>
-                              <ul>
-                                <li>
-                                  <a href="#">
-                                    <input type="checkbox" name="" id="">
-                                    <label for="">Poste sur les resau</label>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <input type="checkbox" name="" id="">
-                                    <label for="">Poste sur les resau</label>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <input type="checkbox" name="" id="">
-                                    <label for="">Poste sur les resau</label>
-                                  </a>
-                                </li>
-                              </ul>
+                              <div id="req_input" class="datainputs">
+                                <!--Ajout des petites taches à faire-->
+                              </div>
                             </div>
                           </div>
                           <div class="right-form">
                             <div>
                               <label for="projectType">Type de projet</label>
                               <select id="event_select" name="memeber_job">
-                                  <option value="carrom">Carrom Board</option>
-                                  <option value="carrom">Carrom Board</option>
+                                  <option value="carrom">Equipe</option>
+                                  <option value="carrom">Personnel</option>
                               </select>
                             </div>
 
@@ -311,12 +281,19 @@
                             </div>
 
                             <div>
-                              <input type="button" id="limitDate" value="Ajouter des activités" />
+                              <input type="button" class="" id="addmore" value="Ajouter des activités" />
                             </div>
 
                             <div>
-                              <label for="limitDate">Date limite</label>
-                              <input type="file" id="limitDate" placeholder="15/05/2022" />
+                              <label for="limitDate">pièce joindres</label>
+                              
+                              <div class="file">
+                                <div class="file__input" id="">
+                                  <label class="file__input--label" for="customFile" data-text-btn="Télécharger un fichier">Add file:</label>
+                                  <input class="file__input--file" id="customFile" type="file" multiple="multiple" name="files[]" />
+
+                                </div>
+                              </div>
                             </div>
 
                             <button type="submit">ENREGISTRER</button>
@@ -332,7 +309,7 @@
               <!-- END Pop up Add task-->
 
               <!-- Pop up edit task-->
-              <div class="custom-model-main showsTasks" id="projet_task-edit">
+              <div class="custom-model-main showsTasks_update" id="projet_task-edit">
                 <div class="custom-model-inner" id="staskPop">
                   <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
                   <div class="custom-model-wrap">
@@ -350,39 +327,25 @@
                               <label for="projectType">Description</label>
                               <textarea class="task_des" id="" name="taskDescription" rows="4" cols="50"></textarea>
                             </div>
-                            <div>
-                              <label for="projectType">Piece joindre</label>
-                            </div>
-                            <div>
+                           
+                              <p for="projectType">Piece joindre</p>
+                              <div class="joind_225">
+                                <div id="file__inputEdit"></div>
+                              </div>
+                           
+                            <div class="boxMiniTask">
                               <label for="projectType">Activités à réaliser</label>
-                              <ul>
-                                <li>
-                                  <a href="#">
-                                    <input type="checkbox" name="" id="">
-                                    <label for="">Poste sur les resau</label>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <input type="checkbox" name="" id="">
-                                    <label for="">Poste sur les resau</label>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <input type="checkbox" name="" id="">
-                                    <label for="">Poste sur les resau</label>
-                                  </a>
-                                </li>
-                              </ul>
+                              <div id="req_inputEdit" class="datainputs">
+                                <!--Ajout des petites taches à faire-->
+                              </div>
                             </div>
                           </div>
                           <div class="right-form">
                             <div>
                               <label for="projectType">Type de projet</label>
                               <select id="event_select" name="memeber_job">
-                                <option value="carrom">Carrom Board</option>
-                                <option value="carrom">Carrom Board</option>
+                                <option value="carrom">Equipe</option>
+                                <option value="carrom">Personnel</option>
                               </select>
                             </div>
               
@@ -393,24 +356,24 @@
                                 <option value="1">Link</option>
                                 <option value="2">Edit</option>
                                 <option value="3">Cart</option>
-                                <option value="4">Cart</option>
-                                <option value="5">Cart</option>
-                                <option value="6">Cart</option>
-                                <option value="7">Cart</option>
-                                <option value="8">Cart</option>
                               </select>
                             </div>
               
                             <div>
-                              <input type="button" id="limitDate" value="Ajouter des activités" />
+                              <input type="button" class="" id="addmoreEdit" value="Ajouter des activités" />
                             </div>
               
                             <div>
-                              <label for="limitDate">Date limite</label>
-                              <input type="file" id="limitDate" placeholder="15/05/2022" />
+                              <label for="limitDate">pièce joindres</label>
+                              <div class="file">
+                                <div class="file__input">
+                                  <label class="file__input--label" for="customFileEdit" data-text-btn="Télécharger un fichier">Add file:</label>
+                                  <input class="file__input--file" id="customFileEdit" type="file" multiple="multiple" name="files[]" />
+                                </div>
+                              </div>
                             </div>
               
-                            <button type="submit">ENREGISTRER</button>
+                            <button type="submit">MODIFIER</button>
                           </div>
               
                         </form>
@@ -428,7 +391,7 @@
                   <div class="close-btn"><ion-icon name="close-outline"></ion-icon></div>
                   <div class="action_btn">
                     <div class="delete"><ion-icon name="trash-outline"></ion-icon></div>
-                    <div class="update update_team modal-open" data-modal="teamUpdate">
+                    <div class="update update_tasks modal-open" data-modal="projet_task-edit">
                       <ion-icon name="create-outline"></ion-icon>
                     </div>
                   </div>
@@ -448,14 +411,6 @@
                               Les pièces joindres
                             </div>
                             <div class="t_show_t">
-                              <div class="progressbar-container">
-                                <div class="progressbar-bar"></div>
-                                <div class="progressbar-label"></div>
-                              </div>
-                              <div class="ready"></div>
-                              <!--div class="proj_progress-task">
-                                <div id="progress_Proj_bar_task" class="card_proj_line"></div>
-                              </div-->
                               <div class="new checklist-progressbar">
                                 <div class="progressbar">
                                   <div class="progressbar-inner"></div>
@@ -499,31 +454,28 @@
                         
                         <div>
                           <div class="wrapperz">
-                              <!--div class="title">Simple Chatbot</div-->
-                              <div class="box">
-                                  <div class="item">
-                                      <div class="icon">
-                                          <i class="fa fa-user"></i>
-                                      </div>
-                                      <div class="msg">
-                                          <p>Hello everyone, How are you?</p>
-                                      </div>
+                            <div class="chatTask">
+                              <div class="chatTask__wrapper">
+                                <div class="chatTask__message chatTask__message-her">
+                                  <div class="chatTask__message_pers">
+                                    <div class="pers_name">Arsene</div>
+                                    <div class="date">15/25/2022</div>
                                   </div>
-                                  <br clear="both">
-                                  <div class="item right">
-                                      <div class="msg">
-                                          <p>Nice</p>
-                                      </div>
-                                  </div>
-                                                                                                 
+                                  <div>Message #1</div>
+                                </div>
+                                <div class="chatTask__message chatTask__message-own">
+                                  <div class="date"></div>
+                                  <div>Message #2</div>
+                                </div>
                               </div>
-                              
-                              <div class="typing-area">
-                                  <div class="input-field">
-                                      <input type="text" placeholder="Type your message" required>
-                                      <button><ion-icon name="send-outline"></ion-icon></button>
-                                  </div>
-                              </div>
+                            </div>
+                            <div class="chatTask__form">
+                              <form id="chatTask__form">
+                                <input id="text-message" type="text" placeholder="Votre message ici ...">
+                                <button type="submit"><ion-icon name="send-outline"></ion-icon></button>
+                              </form>
+                            </div>
+                            <div id="result"></div>
                           </div>
                         </div>
                       </div>
@@ -556,7 +508,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!--script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script-->
+  <script src="../../asset/js/multiselect.js"></script>
+  <script src="../../asset/js/piece_joind.js"></script>
 </body>
 
 </html>
